@@ -6,8 +6,10 @@
 .logo{
     width:230px;
     height:90px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    margin-right:900px;
+    margin-top: 10px;
+    padding:10px;
+    border-radius: 15px;
 }
 
 .container{
@@ -17,10 +19,8 @@
 }
 
 body{
-    background-color: #1697B7 ;
     font-family: 'Press Start 2P', cursive;
 }
-
 
 ul{
    color: #F3AD78;
@@ -35,8 +35,13 @@ ul.navlist li a{
     margin:40px;
     padding: 10px 15px;
     text-decoration: none;
-    color: #F3AD78;
+    color: white;
     font-family: 'Press Start 2P', cursive;
+}
+
+a:hover {
+    background-color: #F3AD78;
+    border-radius: 2px;
 }
 
 ul.navlist{
