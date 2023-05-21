@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    border :0;
+}
+
+.logo{
+    width:230px;
+    height:90px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.container{
+    display:flex;
+    align-items: left;
+    background-color: black;
+}
+
+body{
+    background-color: #1697B7 ;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+ul{
+   color: #F3AD78;
+}
+
+ul.navlist li a{
+    display: block;
+    float: right;
+    text-align: right;
+    list-style-type: none;
+    text-decoration: none;
+    margin:40px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #F3AD78;
+    font-family: 'Press Start 2P', cursive;
+}
+
+ul.navlist{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    margin: auto;
+}
+
+ul.navlist li{
+    margin-right:10px
+}
+
+ul.navbar li a:hover {
+    background-color: #ddd;
+}
