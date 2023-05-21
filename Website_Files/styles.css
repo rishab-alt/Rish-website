@@ -12,14 +12,19 @@
     border-radius: 15px;
 }
 
-.container{
+.placehold{
+    margin:10px;
+    border-radius: 10px;
+}
+
+.nav{
     display:flex;
     align-items: left;
-    background-color: black;
 }
 
 body{
     font-family: 'Press Start 2P', cursive;
+    background-color:rgba(16, 121, 156, 0.505)
 }
 
 ul{
@@ -58,3 +63,12 @@ ul.navlist li{
 ul.navbar li a:hover {
     background-color: #ddd;
 }
+
+.Introduce{
+    padding: 40px;
+}
+
+.nav a.active {
+    background-color: #F3AD78;
+}
+
