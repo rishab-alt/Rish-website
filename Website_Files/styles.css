@@ -26,10 +26,8 @@ body{
 .nav{
     display:flex;
     align-items: left;
-    background-color: #002233
+    background-color: #051937;
 }
-
-
 
 ul{
    color: #F3AD78;
@@ -100,18 +98,18 @@ section{
     background-size: cover;
 }
 
-.layer1{
-    background-image: url('./images/wave2.svg');
-}
-
-.layer2{
-    background-image: url("./images/waveup.svg");
-    
-}
-
 .layer3{
+    background-image: url("./images/wave2.svg");
+}
+
+.layer4{
     background-image: url("./images/wavebottom.svg");
 }
+
+.layer5{
+    background-image: url("./images/dots.svg");
+}
+
 
 .intro{
     color: #ddd;
@@ -119,7 +117,25 @@ section{
     padding-top: 200px;
     font-size: 80px;
     font-weight: bold;
+    margin-bottom: 500px;
 }
+
+.blob1 .my_background{
+    padding-right: 1200px;
+    float: left;
+}
+
+.h1{
+    align-items: center;
+    color: #ddd;
+}
+
+.spacer layer4 layer5 layer6 .breif{
+    color: white
+}
+
+
+
 
 
 
