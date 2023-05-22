@@ -3,10 +3,16 @@
     border :0;
 }
 
+body{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    background-color:#051937;
+}
+
 .logo{
     width:230px;
     height:90px;
-    margin-right:900px;
+    margin-right:1000px;
     margin-top: 10px;
     padding:10px;
     border-radius: 15px;
@@ -20,13 +26,10 @@
 .nav{
     display:flex;
     align-items: left;
-    background-color: black;
+    background-color: #002233
 }
 
-body{
-    font-family: 'Press Start 2P', cursive;
-    background-color:rgba(16, 121, 156, 0.505)
-}
+
 
 ul{
    color: #F3AD78;
@@ -42,11 +45,11 @@ ul.navlist li a{
     padding: 10px 15px;
     text-decoration: none;
     color: white;
-    font-family: 'Press Start 2P', cursive;
+
 }
 
 a:hover {
-    background-color: #F3AD78;
+    background-color:#00b2ff;
     border-radius: 2px;
 }
 
@@ -73,13 +76,47 @@ ul.navbar li a:hover {
     background-color: #F3AD78;
 }
 
-.breif_intro{
-    float: right;
-    margin-top:5%;
-    padding:0px
+section{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vh;
 }
 
-.Introduce{
-    text-decoration:underline;
+.orange{
+    background-color: orange;
 }
+
+.pink{
+    background-color: pink;
+}
+
+.spacer{
+    aspect-ratio: 960/540;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1{
+    background-image: url('./images/wave2.svg');
+}
+
+.layer2{
+    background-image: url("./images/waveup.svg");
+    
+}
+
+.layer3{
+    background-image: url("./images/wavebottom.svg");
+}
+
+
+
+
+
+
 
