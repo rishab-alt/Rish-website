@@ -5,8 +5,8 @@
 
 body{
     font-family: 'Anton', sans-serif;
-    font-family: 'Press Start 2P', cursive;
     background-color:#051937;
+   
 }
 
 .logo{
@@ -45,8 +45,8 @@ ul.navlist li a{
     padding: 10px 15px;
     text-decoration: none;
     color: white;
-
 }
+
 
 a:hover {
     background-color:#00b2ff;
@@ -61,16 +61,15 @@ ul.navlist{
 }
 
 ul.navlist li{
-    margin-right:10px
+    margin-right:10px;
+    font-weight: bold;
 }
 
 ul.navbar li a:hover {
     background-color: #ddd;
+    font-weight: bold;
 }
 
-.Introduce{
-    padding: 40px;
-}
 
 .nav a.active {
     background-color: #F3AD78;
@@ -112,6 +111,14 @@ section{
 
 .layer3{
     background-image: url("./images/wavebottom.svg");
+}
+
+.intro{
+    color: #ddd;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 80px;
+    font-weight: bold;
 }
 
 
