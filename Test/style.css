@@ -1,218 +1,95 @@
 *{
     margin: 0;
-    border :0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
 body{
     font-family: 'Anton', sans-serif;
     background-color:#051937;
-   
 }
 
-.logo{
-    width:230px;
-    height:90px;
-    margin-right:1000px;
-    margin-top: 10px;
-    padding:10px;
-    border-radius: 15px;
-}
-
-.placehold{
-    margin:10px;
-    border-radius: 10px;
-}
-
-.nav{
-    display:flex;
-    align-items: left;
-    background-color: #051937;
-}
-
-ul{
-   color: #F3AD78;
-}
-
-ul.navlist li a{
-    display: block;
-    float: right;
-    text-align: right;
-    list-style-type: none;
-    text-decoration: none;
-    margin:40px;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: white;
-}
-
-
-a:hover {
-    background-color:#00b2ff;
-    border-radius: 2px;
-}
-
-ul.navlist{
-    list-style-type: none;
-    display:flex;
-    align-items: center;
-    margin: auto;
-}
-
-ul.navlist li{
-    margin-right:10px;
-    font-weight: bold;
-}
-
-ul.navbar li a:hover {
-    background-color: #ddd;
-    font-weight: bold;
-}
-
-.nav a.active {
-    background-color: #F3AD78;
-}
-
-.hamburger {
-    appearance: none;
-    outline: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: block;
-    width: 2rem;
-    height: 2rem;
-}
-
-.hamburger span{
-    color: #00b2ff;
-    font-size: 2rem;
-}
-
-
-
-
-section{
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 400px;
-    padding: 100px 20vh;
-}
-
-.orange{
-    background-color: orange;
-}
-
-.pink{
-    background-color: pink;
-}
-
-.spacer{
-    aspect-ratio: 960/540;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.layer3{
-    background-image: url("../Website_Files/images/wave2.svg");
-    width:100%;
-    height:100%
-}
-
-.layer4{
-    background-image: url("../Website_Files/images/wavebottom.svg");
-}
-
-.layer6{
-    background-image: url("./images/aboutme_wave.svg");
-}
-
-
-.intro{
-    color: #ddd;
-    text-align: center;
-    padding-top: 200px;
-    font-size: 80px;
-    font-weight: bold;
-    margin-bottom: 500px;
-}
-
-.blob1 .my_background{
-    padding-right: 1200px;
-    float: left;
-}
-
-.h1{
-    align-items: center;
-    color: #ddd;
-}
-
-.spacer layer4 layer5 layer6 .breif{
-    color: white
-}
-
-.hidden{
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(5px);
-    transform: translateX(-100);
-}
-
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-h1{
-    color: #ddd;
-}
-
-.aboutme_back{
-    font-size: 80px;
-    position:absolute; top: 50px;
-    background-color: #00b2ff;
-    border-radius: 5px ;
-}
-
-.aboutme{
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    padding-top: 40px;
-}
-
-.header1{
-    color: white;
-    padding-top: 70px;
-    font-size: 50px;
-    text-decoration: underline;
-}
-
-footer{
-    background-color: #051937;
-}
-
-@media (max-width:768px) {
-    .navbar li{
-        float: none;
-        display: inline-block;
-    }
-}
-
-@media (max-width:768px) {
-    .navbar.responsive li{
-        position: relative;
+ .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
     }
 
-    .navbar.responsive{
-        float: none;
-        display: block;
-        text-align: center;
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
     }
-}
 
-.
+    .logo a {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        list-style: none;
+        margin-left: 10px;
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    @media screen and (max-width: 768px) {
+        .nav-links {
+            position: fixed;
+            right: 0;
+            height: 92vh;
+            top: 8vh;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+        }
+
+        .nav-links li {
+            opacity: 0;
+        }
+
+        .burger {
+            display: block;
+        }
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
