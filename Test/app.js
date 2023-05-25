@@ -1,6 +1,10 @@
-const navToggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelector(".nav-links");
+    function toggleNav() {
+        var navLinks = document.getElementById("navLinks");
+        var burger = document.getElementsByClassName("burger");
 
-navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show")
-});
+        navLinks.classList.toggle("nav-active");
+
+        for (var i = 0; i < burger.length; i++) {
+            burger[i].classList.toggle("toggle");
+        }
+    }
