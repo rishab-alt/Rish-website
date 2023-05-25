@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,38 +10,34 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Rish's Website</title>
 </head>
+
 <body>
-<!--Navbar-->
-<div class="nav" id="navres">
-    <img class="logo" src="../Website_Files/images/LOGO.png">
-    <nav class="navbar">
+    <!--Navbar-->
+<nav>
+    <div class="nav">
+        <img class="logo" src="../Website_Files/images/LOGO.png">
         <ul class="navlist">
             <li><a href="#">Home</a></li>
-            <li ><a href="../Website_Files/pages/about.html">About</a></li>
-            <li><a href="../Website_Files/pages/contact.html">Contact me!</a></li>
-            <button class="hamburger">
-                <span class="material-icons">menu</span>
-            </button>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact me!</a></li>
         </ul>
-    </nav>
-    <div class="dropdown-content">
-        <a href="" class="home"></a>
-        <a href="" class="home"></a>
-        <a href="" class="home"></a>  
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-</div>
+</nav>
 
+    <!--Navbar-->
 
-<!--Navbar-->
-
-<div class="spacer hidden">
-    <div class="spacer layer3">
-        <h1 class="intro">Welcome to my Portfolio! Take Alook Around</h1>
+    <div class="spacer hidden">
+        <div class="spacer layer3 container">
+            <h1 class="intro">Welcome to my Portfolio! Take Alook Around</h1>
+        </div>
     </div>
-</div>
 
 
-<script src="../Website_Files/app.js"></script>
+    <script src="./app.js"></script>
 
 </body>
+
 </html>
