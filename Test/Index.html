@@ -13,30 +13,20 @@
 
 <body>
     <!--Navbar-->
-  <nav class="navbar">
-        <div class="logo">
-          <a href="#"><img class="logo" src="../Website_Files/images/LOGO.png"></a>
-        </div>
-      
-        <ul class="nav-links" id="navLinks">
-              <li><a href="#">Home</a></li>
-              <li><a href="../Website_Files/pages/about.html">About</a></li>
-              <li><a href="../Website_Files/pages/contact.html">Contact Me!</a></li>
-        </ul>
-        <div class="burger" onclick="toggleNav()">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-        </div>
-  </nav>
 
-    <!--Navbar-->
+      <div class="topnav" id="myTopnav">
+        <img class="logo" src="../Website_Files/images/LOGO.png">
+        <a href="#home" >Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
-    <div class="spacer hidden">
-        <div class="spacer layer3 container">
-            <h1 class="intro">Welcome to my Portfolio! Take A look Around</h1>
-        </div>
-    </div>
+  <!--Navbar-->
+
 
 
     <script src="./app.js"></script>
