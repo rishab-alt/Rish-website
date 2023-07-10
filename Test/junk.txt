@@ -241,4 +241,55 @@ footer{
     </div>
 </div>
 
+------------------------------------
 
+.nav{
+    display:flex;
+    align-items: left;
+    background-color: #051937;
+}
+
+ul{
+   color: #F3AD78;
+}
+
+ul.navlist li a{
+ 
+    float: right;
+    text-align: right;
+    list-style-type: none;
+    text-decoration: none;
+    margin:30px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover {
+    background-color:#00b2ff;
+    border-radius: 2px;
+}
+
+ul.navlist{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+ul.navlist li{
+    margin-right:10px;
+    font-weight: bold;
+}
+
+ul.navbar li a:hover {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+
+.nav a.active {
+    background-color: #F3AD78;
+}
