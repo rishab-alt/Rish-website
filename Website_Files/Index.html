@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Rish's Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Navbar-->
-    <div class="nav" id="navres">
-        <img class="logo" src="images/LOGO.png">
-        <nav class="navbar">
-            <ul class="navlist">
-                <li><a href="./Index.html">Home</a></li>
-                <li><a href="./pages/about.html">About</a></li>
-                <li><a href="./pages/contact.html">Contact me!</a></li>
-            </ul>
-           
-        </nav>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="#news">Contact Me</a>
+      <a href="#contact">About</a>
+      <a href="#about" class="active">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+
     <!--Navbar-->
 
-    <div class="spacer hidden">
-        <div class="spacer layer3 ">
-            
-            <h1 class="intro_home">Welcome to my Portfolio! Take A look Around</h1>
-              <div class="download-container">
-                <a href="./Rish-cv.pdf" download="Rishab_Saddiq_CV">
-                  <button class="download-button">Download</button>
-                </a>
-              </div>
+    <h1 class="intro_home">Welcome to my Portfolio! Take A look Around</h1>
+    <div class="container">
+        <div class="vertical-center">
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
         </div>
-    </div>
+      </div>
 
-    <script src="./app.js">
-        
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
